@@ -4,11 +4,10 @@ const RestaurantCard=(props)=>{
         <div className="card">
         <img
         src={
-          IMG_CDN_URL+
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+
           props.cloudinaryImageId
         }
         />
-        
             <h2>{props.name}</h2>
             <h4>{props.cuisines.join(", ").slice(0,30)}</h4>
             <h4>{props.area}</h4>
